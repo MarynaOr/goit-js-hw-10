@@ -12,11 +12,7 @@
   background-color: rgb(148, 151, 151);
 
   font-weight: 800;
-
-
 }
-
-
 
 .con-timer {
   display: flex;
@@ -26,7 +22,7 @@
   align-items: center;
 }
 
-.inp-date {
+#datetime-picker {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -42,22 +38,21 @@
   margin-right: 8px;
 }
 
-.inp-date:hover {
+#datetime-picker:hover {
   border: 1px solid #000;
-  
 }
 
-.inp-date:active {
+#datetime-picker:active {
   border: 1px solid #4e75ff;
   color: #000;
 }
 
-.inp-date:disabled {
+#datetime-picker:disabled {
   border: 1px solid #808080;
   color: #808080;
 }
 
-.btn-timer {
+[data-start] {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -71,12 +66,12 @@
   height: 40px;
   background-color: #4e75ff;
 }
-.btn-timer:hover {
+[data-start]:hover {
   background-color: #6c8cff;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.btn-timer:disabled {
+[data-start]:disabled {
   background-color: #cfcfcf;
 }
 /* .btn-timer[disabled][data-start] {
@@ -84,26 +79,26 @@
     color: #989898;
   } */
 .timer {
-min-width: 346px;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 24px;
+  min-width: 346px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 .field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .value {
-    font-weight: 400;
-font-size: 40px;
-line-height: 1.2;
-letter-spacing: 0.04em;
-color: #2e2f42;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 .label {
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #2e2f42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
 }
